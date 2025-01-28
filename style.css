@@ -1,77 +1,141 @@
-:root{
-    --color-white:#FFFAEF;
-    --color-black:#615E5D;
-    --color-beige:#F2D49C;
-    --color-green:#93C678;
+:root {
+    --color-white: #FFFAEF;
+    --color-black: #615E5D;
+    --color-beige: #F2D49C;
+    --color-green: #93C678;
 
-    --radius:50px;
-    
+    --radius: 50px;
+
 }
 
 html {
-    background-color: white;
-    color: black;
-    
+    background-color: var(--color-white);
+    color: var(--color-black);
 }
-body{
+
+body {
     margin: 0px;
-    
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
 }
 
 a {
-    color: black;
+    color: var(--color-black);
+    text-decoration: none;
 }
 
-.fond {
-    background-color: var(--color-white);
-    display: flex;
-    
+a:hover{
+    color: var(--color-beige);
 }
 
-button{
-    padding: 12px 24px ;
+button {
+    padding: 12px 24px;
     border: 0px;
-    color: white;
+    color:var(--color-white);
     border-radius: var(--radius);
     background-color: var(--color-green);
-    
+
 }
 
 
-header{
-    display: flex;
-    background-color: var(--color-beige);
-    
-}
-.MK2{
+.img_h1 {
     display: flex;
     align-items: center;
 }
+
+#section-nav {
+    margin-left: auto;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background-color: var(--color-white);
+}
+
+h2 {
+    font-size: 55px;
+    max-width: 500px;
+}
+
+.herosec {
+    padding: 20px;
+    height: 300px;
+    color: var(--color-white);
+}
+
+.Problématique {
+    background-color: var(--color-white);
+
+}
+
+.contexte {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 150px;
+    font-size: 15px;
+}
+
+#Zr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
 
 header section {
     display: flex;
     justify-content: center;
 }
+
 header section img {
     height: 50px;
     width: 50px;
 }
-#section-auto {
-    margin-left: auto;
-    gap: 20px;
-    display: flex;
-    align-items: center;
-    
-}
 
-#MK1{
+
+
+#hero {
     background-image: url(medias/lyon.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 0;
+    height: 150vh;
+    margin-bottom: 20px;
 }
 
 body article section section img {
     width: 200px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+.herosec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    
+    width: 200px;
+    height: 300px;
+    border: 0 white;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2%;
+    background-color: var(--color-beige);
+    
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
