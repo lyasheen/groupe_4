@@ -1,4 +1,77 @@
-html {
-    background-color: black;
-    color: beige;
+:root{
+    --color-white:#FFFAEF;
+    --color-black:#615E5D;
+    --color-beige:#F2D49C;
+    --color-green:#93C678;
+
+    --radius:50px;
+    
 }
+
+html {
+    background-color: white;
+    color: black;
+    
+}
+body{
+    margin: 0px;
+    
+}
+
+a {
+    color: black;
+}
+
+.fond {
+    background-color: var(--color-white);
+    display: flex;
+    
+}
+
+button{
+    padding: 12px 24px ;
+    border: 0px;
+    color: white;
+    border-radius: var(--radius);
+    background-color: var(--color-green);
+    
+}
+
+
+header{
+    display: flex;
+    background-color: var(--color-beige);
+    
+}
+.MK2{
+    display: flex;
+    align-items: center;
+}
+
+header section {
+    display: flex;
+    justify-content: center;
+}
+header section img {
+    height: 50px;
+    width: 50px;
+}
+#section-auto {
+    margin-left: auto;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#MK1{
+    background-image: url(medias/lyon.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+}
+
+body article section section img {
+    width: 200px;
+}
+
