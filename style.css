@@ -7,7 +7,12 @@
     --radius: 50px;
 
 }
-li{
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+li {
     list-style: none;
 }
 
@@ -23,14 +28,28 @@ body {
     font-weight: 300;
     font-style: normal;
     letter-spacing: 2px;
-    background-image: url(medias/lyon.jpg);
-    background-repeat: no-repeat;
-    height: 300vh;
     margin-bottom: 20px;
 }
+
 header {
-    max-width: 1400px;
+    display: flex;
+    background-color: var(--color-white);
+    justify-content: space-between;
+    img{
+        max-width: 43px;
+    }
 }
+
+section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 24px;
+    background-size: cover;
+}
+
 
 .logo {
     display: flex;
@@ -40,11 +59,10 @@ header {
 }
 
 #section-nav {
-    margin-left: auto;
     gap: 20px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0px 50px;
 }
 
 a {
@@ -52,42 +70,61 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: var(--color-beige);
 }
 
 button {
     padding: 12px 24px;
     border: 0px;
-    color:var(--color-white);
+    color: var(--color-white);
     border-radius: var(--radius);
     background-color: var(--color-green);
 
 }
 
-header {
-    display: flex;
-    background-color: var(--color-white);
-}
+
 
 h2 {
     font-size: 55px;
-    max-width: 500px;
 }
 
-.herosec {
+.container {
     display: flex;
-    margin-right: 500px;
+    flex-direction: row;
+    max-width: 1080px;
+    width: 100%;   
+    margin: auto;
+}
+
+.content {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+}
+
+.is-centered {
     align-items: center;
-    padding: 20px;
-    height: 300px;
+    margin: auto;
+}
+
+#herosec {
+    display: flex;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
     color: var(--color-white);
-    p {
+    background-image: url(medias/lyon.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    .content {
         max-width: 500px;
-        padding-bottom: 20px;
     }
-    margin-bottom: 20px;
+
+    p {
+        padding-bottom: 20px;
+        
+    }
 }
 
 #Problematique {
@@ -96,49 +133,49 @@ h2 {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-white);
+
     img {
         width: 90%;
         padding: 30px 30px;
     }
 }
 
-.container {
-    display: flex;
-    flex-direction:row ;
-    max-width: 1080px;
-}
 
 .contexte {
     display: flex;
     flex-direction: column;
     padding: 0px 150px;
     font-size: 15px;
+
     p {
         margin-bottom: 30px;
     }
+
     h2 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
 }
 
-header section {
-    display: flex;
-    justify-content: center;
-}
 
 header section img {
     height: 50px;
     width: 50px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.box{
-    
-    /* width: 200px; */
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box {
+
+    width: 166px;
     /* height: 200px; */
     border: 0 white;
     padding: 5px;
@@ -146,17 +183,26 @@ button:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2%;
     background-color: var(--color-beige);
-    
-}
-.box{
     display: flex;
     justify-content: center;
     padding: 40px;
-} 
-.box-container{
-    display: flex;
-    align-items: center;
-    margin-left: 100px;
+}
+
+#nous_section {
+    img {
+        width: 40%;
+        padding: 30px 30px;
+    }
+}
+
+#vous_section {
+    img {
+        width: 40%;
+        padding: 30px 30px;
+        aspect-ratio: inherit;
+        object-fit: cover;
+    }
+    background-color: white;
 }
 
 /* avis */
@@ -170,32 +216,54 @@ button:hover{
     font-family: "Michroma", sans-serif;
     background: var(--color-beige);
     border-radius: 8px;
-    margin-top: 50px;
-    width: 500px;
-    height: 250px;
+    /* margin-top: 50px; */
+    width: 43%;
+    height: fit-content;
 }
 
-.avis_texte {
-    
-}
 
 .avis_img {
     display: flex;
     border-radius: 50%;
-        width: 50px;
-        height: 50px;
+    width: 50px;
+    height: 50px;
 
 }
 
+#partenaires {
+    background-color: white;
+    img {
+        width: 200px;
+    }
+
+    .container {
+        justify-content: center;
+        gap: 24px;
+    }
+}
+.contact_valeurs{
+    display: flex;
+    gap: 40px;
+    div{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+}
 .doc_background-white {
-    
+
     background-color: var(--color-beige);
+    padding: 10px;
 }
 
 .doc_background-beige {
     background-color: var(--color-white);
     display: flex;
-    padding-left: 136px;
+    /* padding-left: 136px; */
+}
+
+.doc_pading {
+    padding: 10%;
 }
 
 .OptionLangue {
@@ -203,48 +271,38 @@ button:hover{
 }
 
 #persona {
-    width: 600px;
+    width: 700px;
 }
 
 .DocFooterIMG {
+    width: 50px;
+    height: 50px;
+}
+
+.icon {
     width: 100px;
     height: 100px;
 }
 
-
-.icon {
-    width: 40px;
-    height: 40px;
-}
-#fonctionnalité{
+#fonctionnalité {
     margin-top: 100px;
     background-color: var(--color-white);
     padding: 20px;
     background-color: white;
 }
-#fonction1{
-    margin-left: 380px;
-}
-.fond{
-    padding: 30px;
-    display: flex;
-}
-#Nous{
+
+#Nous {
     max-width: 600px;
 }
-#avatars{
-    img {
-        width: 50%;
-        padding: 30px 30px;
-        margin-left: 120px;
-    }
-}
-#fond1{
+
+#fond1 {
     background-color: white;
     padding: 20px;
 }
-#fond2{
+
+#side_img {
     max-width: 900px;
+
     img {
         width: 50%;
         padding: 30px 30px;
@@ -254,11 +312,15 @@ button:hover{
 
 
 .doc_contexte {
-    color:white;
+    color: white;
+    background-image: url(medias/lyon.jpg);
+    background-repeat: no-repeat;
 }
 
 .doc_box2 {
-    justify-content: center;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
     padding: 40px;
     border: 0 white;
     padding: 5px;
@@ -266,12 +328,38 @@ button:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2%;
     background-color: var(--color-beige);
-} 
+    /* width: 30%; */
+    width: auto;
 
-.doc_box-container2{
+    p{
+        font-size: 17px;
+    }
+}
+
+.doc_box5{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border: 0 white;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2%;
+    background-color: var(--color-beige);
+    width: 30%;
+    p {
+        height: 50px;
+    }
+}
+
+.doc_box-container2 {
     display: flex;
     align-items: center;
-    margin-left: 100px;
+    padding-bottom: 50px;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+
 }
 
 .doc_logo {
@@ -280,10 +368,87 @@ button:hover{
 }
 
 .doc_sansmarge {
+    display: flex;
+    justify-content: center;
     margin: 0px;
+    padding: 50px;
+
+
 }
 
 .doc_box3 {
     display: flex;
     justify-content: center;
 }
+
+.doc_box4 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.DocIconeFooter {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 50px;
+}
+
+.avis_wrapper {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: white;
+    #cc {
+        margin-left: 70px;
+    }
+
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    #logo {
+        max-width: 10%;
+    }
+}
+
+#telecharge {
+    max-width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#telimage {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        max-width: 50%;
+    }
+
+}
+
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* #logo{
+    padding: 0;
+} */

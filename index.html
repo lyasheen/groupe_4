@@ -16,34 +16,36 @@
 <body>
    <script src="https://kit.fontawesome.com/f0a45dc71d.js" crossorigin="anonymous"></script>
    <header>
-      <section class="logo">
+      <div class="logo">
          <img src="medias/solia_v.png" alt="solia.logo">
          <h1>Solia</h1>
-      </section>
-      <section id="section-nav">
-         <a href="" class="section-auto">Accueil</a>
+      </div>
+      <div id="section-nav">
+         <a href="index.html" class="section-auto">Accueil</a>
          <a href="" class="section-auto">Pourquoi</a>
          <a href="" class="section-auto">Qui</a>
          <a href="" class="section-auto">Avis</a>
          <a href="documentation.html" class="section-auto">Documentation</a>
          <a href="" class="section-auto">Langues</a>
          <a href=""><button>Télécharger</button></a>
-      </section>
+      </div>
    </header>
 
    <!-- héro section -->
-   <section class="herosec">
-      <div>
-         <h2>L'application qui vous accueille</h2>
-         <p>Le répertoire de lieux-ressources pour tous les parents nouveaux arrivants</p>
-         <a href=""><button>Télécharger</button></a>
+   <section id="herosec">
+      <div class="container">
+         <div class="content">
+            <h2>L'application qui vous accueille</h2>
+            <p>Le répertoire de lieux-ressources pour tous les parents nouveaux arrivants</p>
+            <a href=""><button>Télécharger</button></a>
+         </div>
       </div>
    </section>
 
    <!-- Section Problématique -->
    <section id="Problematique">
       <div class="container">
-         <div class="contexte">
+         <div class="content">
             <h2>SOLIA</h2>
             <p>L’accès aux services et aides les plus essentiels est souvent limité par de nombreux facteurs ; c’est
                d’autant plus vrai pour les familles expatriées en France. Souvent, elles ne connaissent pas leurs
@@ -59,89 +61,211 @@
    </section>
 
    <!-- article Solution -->
-   <article id="fonctionnalité">
-      <section>
-         <!-- icone des fonctionnalité en box -->
-         <h2 id="fonction1">Nos fonctionnalités</h2>
-         <section class="box-container">
-            <div class="box">
-               <i class="fa-solid fa-language"></i>
-               <p>Choisissez votre langue</p>
+   <section id="fonctionnalité">
+      <div class="container">
+         <div class="content is-centered">
+            <!-- icone des fonctionnalité en box -->
+            <h2>Nos fonctionnalités</h2>
+            <div class="box-container">
+               <div class="box">
+                  <i class="fa-solid fa-language"></i>
+                  <p>Choisissez votre langue</p>
+               </div>
+               <div class="box">
+                  <i class="fa-regular fa-map"></i>
+                  <p>Trouvez vos itinéraires</p>
+               </div>
+               <div class="box">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <p>Informez vous sur vos droits</p>
+               </div>
+               <div class="box">
+                  <i class="fa-solid fa-filter"></i>
+                  <p>Filtrez selon vos besoins</p>
+               </div>
             </div>
-            <div class="box">
-               <i class="fa-regular fa-map"></i>
-               <p>Trouvez vos itinéraires</p>
-            </div>
-            <div class="box">
-               <i class="fa-solid fa-circle-info"></i>
-               <p>Informez vous sur vos droits</p>
-            </div>
-            <div class="box">
-               <i class="fa-solid fa-filter"></i>
-               <p>Filtrez selon vos besoins</p>
-            </div>
-         </section>
-      </section>
-   </article>
+         </div>
+      </div>
+
+      </div>
+   </section>
 
    <!-- nous -->
-   <section class="fond">
-      <div id="Nous">
-         <h2>Nous</h2>
-         <p>
-            L’idée de Solia est née d’une collaboration entre 5 apprentis développeurs désireux de rassembler en un seul
-            outil tous les lieux et services proposés pour les familles en situation irrégulière, ainsi que celles ne
-            parlant pas le français.
-         </p>
+   <section id="nous_section">
+      <div class="container">
+         <div class="content">
+            <h2>Nous</h2>
+            <p>
+               L’idée de Solia est née d’une collaboration entre 5 apprentis développeurs désireux de rassembler en un
+               seul
+               outil tous les lieux et services proposés pour les familles en situation irrégulière, ainsi que celles ne
+               parlant pas le français.
+            </p>
 
-         <p>
-            Ayant un pied dans le monde de la puériculture, l’équipe s’applique avant tout à réunir tous les
-            lieux-ressources de Lyon 7e pour les jeunes parents, avec l’espoir de s’étendre sur le reste de la ville et
-            sur d’autres services de réinsertion.
-         </p>
-      </div>
-      <div id="avatars">
+            <p>
+               Ayant un pied dans le monde de la puériculture, l’équipe s’applique avant tout à réunir tous les
+               lieux-ressources de Lyon 7e pour les jeunes parents, avec l’espoir de s’étendre sur le reste de la ville
+               et
+               sur d’autres services de réinsertion.
+            </p>
+         </div>
          <img src="medias/avatars.png">
+
       </div>
    </section>
 
    <!-- vous -->
-   <section>
-      <section id="fond1">
-         <div id="fond2">
+   <section id="vous_section">
+      <div class="container">
+         <img src="medias/vous_section.jpg">
+         <div class="content">
             <h2>Vous</h2>
             <p>Vous venez d’arriver en France, vous êtes allophone et jeune parent ?</p>
             <p>Solia est là pour vous guider.</p>
-            <p>
-               Avec un répertoire dans votre langue contenant toutes les informations sur vos droits et une map
+            <p> Avec un répertoire dans votre langue contenant toutes les informations sur vos droits et une map
                interactive vous orientant dans la ville, vous n’aurez plus aucun souci à trouver les aides dont vous
                avez vraiment besoin.
             </p>
+            <p>En savoir plus...</p>
          </div>
-         <!-- <div id="side-img">
-            <img src="medias/vous section.jpg">
-         </div> -->
-      </section>
+      </div>
    </section>
 
    <!-- avis -->
-   <section class="avis_section">
-      <div class="avis">
-         <img class="avis_img" src="medias/avis_1.jpg">
-         <div class="avis_texte"></div>
-         <h4>Maria L</h4>
-         <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et j’ai découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles comme la mienne !"</p>
-         <img class="avis_note" src="medias/etoile.png" alt="">
+   <section id="avis_section">
+      <div class="container">
+         <div class="avis_wrapper">
+            <div class="avis">
+               <img class="avis_img" src="medias/avis_1.jpg">
+               <div class="avis_texte">
+                  <h4>Maria L</h4>
+                  <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et
+                     j’ai
+                     découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles
+                     comme
+                     la
+                     mienne !"</p>
+                  <img class="avis_note" src="medias/etoile.png" alt="">
+               </div>
+            </div>
+            <div class="avis">
+               <img class="avis_img" src="medias/avis_3.png">
+               <div class="avis_texte">
+                  <h4>Maria L</h4>
+                  <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et
+                     j’ai
+                     découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles
+                     comme
+                     la
+                     mienne !"</p>
+                  <img class="avis_note" src="medias/etoile.png" alt="">
+               </div>
+            </div>
+            <div class="avis">
+               <img class="avis_img" src="medias/avis_4.jpg">
+               <div class="avis_texte">
+                  <h4>Maria L</h4>
+                  <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et
+                     j’ai
+                     découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles
+                     comme
+                     la
+                     mienne !"</p>
+                  <img class="avis_note" src="medias/etoile.png" alt="">
+               </div>
+            </div>
+            <div class="avis">
+               <img class="avis_img" src="medias/avis_5.jpg">
+               <div class="avis_texte">
+                  <h4>Maria L</h4>
+                  <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et
+                     j’ai
+                     découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles
+                     comme
+                     la
+                     mienne !"</p>
+                  <img class="avis_note" src="medias/etoile.png" alt="">
+               </div>
+            </div>
          </div>
       </div>
-      <div class="avis">
-         <img class="avis_img" src="medias/avis_2.png">
-         <div class="avis_texte"></div>
-         <h4>Maria L</h4>
-         <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et j’ai découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles comme la mienne !"</p>
-         <img class="avis_note" src="medias/etoile.png" alt="">
+   </section>
+
+   <section id="partenaires">
+      <h2>Partenaires</h2>
+      <div class="container">
+         <img src="medias/partenaire_1.png" alt="">
+         <img src="medias/partenaire_2.png" alt="">
+         <img src="medias/partenaire_3.png" alt="">
+         <img src="medias/partenaire_4.png" alt="">
       </div>
    </section>
+
+   <section>
+      <div class="container">
+         <div class="content is-centered">
+            <h2>Rejoignez-nous</h2>
+
+            <div class="contact_valeurs">
+               <div><svg width="21" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M22.0066 3.20477C24.0122 1.76076 26.3387 1.03876 28.966 1.03876C30.41 1.03876 31.9944 1.41981 33.7192 2.22204C35.444 3.00422 36.8077 3.92678 37.8105 4.98973C39.8763 7.55686 40.7387 10.5452 40.4378 13.9546C40.1169 17.3641 38.9938 20.0315 37.0484 21.9168L21.8261 37.139C21.4451 37.5201 20.9637 37.7006 20.4022 37.7006C19.8406 37.7006 19.3793 37.5201 18.9983 37.139C18.8128 36.9565 18.6672 36.7375 18.5706 36.4959C18.4739 36.2542 18.4284 35.9952 18.4367 35.7351C18.4367 35.1736 18.6172 34.6922 18.9983 34.3112L28.2038 25.1056C28.7052 24.6644 28.7052 24.2031 28.2038 23.7017C27.7025 23.2003 27.2412 23.2003 26.7999 23.7017L17.5944 32.9073C17.4087 33.0943 17.1864 33.2407 16.9413 33.3374C16.6962 33.434 16.4337 33.4788 16.1704 33.4688C15.6089 33.4688 15.1476 33.2883 14.7665 32.9073C14.5811 32.7247 14.4355 32.5057 14.3388 32.2641C14.2422 32.0225 14.1966 31.7635 14.205 31.5034C14.205 30.9418 14.3855 30.4605 14.7665 30.0794L23.9721 20.8739C24.5136 20.3725 24.5136 19.8711 23.9721 19.3697C23.5108 18.8683 23.0696 18.8683 22.5682 19.3697L13.3626 28.6755C13.1749 28.8596 12.9521 29.0042 12.7076 29.1006C12.463 29.1971 12.2015 29.2435 11.9387 29.2371C11.3771 29.2371 10.8958 29.0566 10.4746 28.6755C10.0735 28.2945 9.87292 27.8332 9.87292 27.2716C9.87292 26.7101 10.0935 26.2087 10.5348 25.7674L19.7604 16.5418C20.2618 16.0404 20.2618 15.5791 19.7604 15.1379C19.259 14.6967 18.7777 14.6967 18.3364 15.1379L9.03058 24.3836C8.58936 24.7847 8.12807 25.0053 7.62668 25.0053C7.06512 25.0053 6.58378 24.8048 6.22278 24.3836C5.84172 23.9825 5.64117 23.5012 5.64117 22.9396C5.64117 22.378 5.84172 21.9168 6.22278 21.5357C12.3598 15.3585 16.1504 11.6282 17.5944 10.2443L24.7342 17.3039C25.5164 18.046 26.4189 18.4271 27.5219 18.4271C28.9258 18.4271 30.0289 17.8655 30.8512 16.7424C31.4128 15.9201 31.6133 15.0176 31.4529 14.0148C31.2924 13.012 30.8713 12.1697 30.1894 11.4677L22.0066 3.20477ZM26.1381 15.9L17.5944 7.33625L3.39493 21.5357C1.71025 19.831 0.747571 17.2237 0.526958 13.6739C0.306346 10.144 1.26902 7.07553 3.39493 4.50839C5.78156 2.14182 8.62947 0.938477 11.9387 0.938477C15.2679 0.938477 18.0958 2.14182 20.4022 4.50839L28.966 13.0722C29.347 13.4532 29.5275 13.9145 29.5275 14.4761C29.5275 15.0376 29.347 15.519 28.966 15.9C28.5849 16.261 28.1236 16.4616 27.5219 16.4616C26.9804 16.4616 26.5192 16.261 26.1381 15.9Z"
+                     fill="#302E2D" />
+               </svg>
+                  <p>interactif</p>
+               </div>
+               <div><svg width="21" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M22.0066 3.20477C24.0122 1.76076 26.3387 1.03876 28.966 1.03876C30.41 1.03876 31.9944 1.41981 33.7192 2.22204C35.444 3.00422 36.8077 3.92678 37.8105 4.98973C39.8763 7.55686 40.7387 10.5452 40.4378 13.9546C40.1169 17.3641 38.9938 20.0315 37.0484 21.9168L21.8261 37.139C21.4451 37.5201 20.9637 37.7006 20.4022 37.7006C19.8406 37.7006 19.3793 37.5201 18.9983 37.139C18.8128 36.9565 18.6672 36.7375 18.5706 36.4959C18.4739 36.2542 18.4284 35.9952 18.4367 35.7351C18.4367 35.1736 18.6172 34.6922 18.9983 34.3112L28.2038 25.1056C28.7052 24.6644 28.7052 24.2031 28.2038 23.7017C27.7025 23.2003 27.2412 23.2003 26.7999 23.7017L17.5944 32.9073C17.4087 33.0943 17.1864 33.2407 16.9413 33.3374C16.6962 33.434 16.4337 33.4788 16.1704 33.4688C15.6089 33.4688 15.1476 33.2883 14.7665 32.9073C14.5811 32.7247 14.4355 32.5057 14.3388 32.2641C14.2422 32.0225 14.1966 31.7635 14.205 31.5034C14.205 30.9418 14.3855 30.4605 14.7665 30.0794L23.9721 20.8739C24.5136 20.3725 24.5136 19.8711 23.9721 19.3697C23.5108 18.8683 23.0696 18.8683 22.5682 19.3697L13.3626 28.6755C13.1749 28.8596 12.9521 29.0042 12.7076 29.1006C12.463 29.1971 12.2015 29.2435 11.9387 29.2371C11.3771 29.2371 10.8958 29.0566 10.4746 28.6755C10.0735 28.2945 9.87292 27.8332 9.87292 27.2716C9.87292 26.7101 10.0935 26.2087 10.5348 25.7674L19.7604 16.5418C20.2618 16.0404 20.2618 15.5791 19.7604 15.1379C19.259 14.6967 18.7777 14.6967 18.3364 15.1379L9.03058 24.3836C8.58936 24.7847 8.12807 25.0053 7.62668 25.0053C7.06512 25.0053 6.58378 24.8048 6.22278 24.3836C5.84172 23.9825 5.64117 23.5012 5.64117 22.9396C5.64117 22.378 5.84172 21.9168 6.22278 21.5357C12.3598 15.3585 16.1504 11.6282 17.5944 10.2443L24.7342 17.3039C25.5164 18.046 26.4189 18.4271 27.5219 18.4271C28.9258 18.4271 30.0289 17.8655 30.8512 16.7424C31.4128 15.9201 31.6133 15.0176 31.4529 14.0148C31.2924 13.012 30.8713 12.1697 30.1894 11.4677L22.0066 3.20477ZM26.1381 15.9L17.5944 7.33625L3.39493 21.5357C1.71025 19.831 0.747571 17.2237 0.526958 13.6739C0.306346 10.144 1.26902 7.07553 3.39493 4.50839C5.78156 2.14182 8.62947 0.938477 11.9387 0.938477C15.2679 0.938477 18.0958 2.14182 20.4022 4.50839L28.966 13.0722C29.347 13.4532 29.5275 13.9145 29.5275 14.4761C29.5275 15.0376 29.347 15.519 28.966 15.9C28.5849 16.261 28.1236 16.4616 27.5219 16.4616C26.9804 16.4616 26.5192 16.261 26.1381 15.9Z"
+                        fill="#302E2D" />
+                  </svg>
+                  <p>Anonyme et accessible à tous</p>
+               </div>
+               <div><svg width="21" height="38" viewBox="0 0 41 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M22.0066 3.20477C24.0122 1.76076 26.3387 1.03876 28.966 1.03876C30.41 1.03876 31.9944 1.41981 33.7192 2.22204C35.444 3.00422 36.8077 3.92678 37.8105 4.98973C39.8763 7.55686 40.7387 10.5452 40.4378 13.9546C40.1169 17.3641 38.9938 20.0315 37.0484 21.9168L21.8261 37.139C21.4451 37.5201 20.9637 37.7006 20.4022 37.7006C19.8406 37.7006 19.3793 37.5201 18.9983 37.139C18.8128 36.9565 18.6672 36.7375 18.5706 36.4959C18.4739 36.2542 18.4284 35.9952 18.4367 35.7351C18.4367 35.1736 18.6172 34.6922 18.9983 34.3112L28.2038 25.1056C28.7052 24.6644 28.7052 24.2031 28.2038 23.7017C27.7025 23.2003 27.2412 23.2003 26.7999 23.7017L17.5944 32.9073C17.4087 33.0943 17.1864 33.2407 16.9413 33.3374C16.6962 33.434 16.4337 33.4788 16.1704 33.4688C15.6089 33.4688 15.1476 33.2883 14.7665 32.9073C14.5811 32.7247 14.4355 32.5057 14.3388 32.2641C14.2422 32.0225 14.1966 31.7635 14.205 31.5034C14.205 30.9418 14.3855 30.4605 14.7665 30.0794L23.9721 20.8739C24.5136 20.3725 24.5136 19.8711 23.9721 19.3697C23.5108 18.8683 23.0696 18.8683 22.5682 19.3697L13.3626 28.6755C13.1749 28.8596 12.9521 29.0042 12.7076 29.1006C12.463 29.1971 12.2015 29.2435 11.9387 29.2371C11.3771 29.2371 10.8958 29.0566 10.4746 28.6755C10.0735 28.2945 9.87292 27.8332 9.87292 27.2716C9.87292 26.7101 10.0935 26.2087 10.5348 25.7674L19.7604 16.5418C20.2618 16.0404 20.2618 15.5791 19.7604 15.1379C19.259 14.6967 18.7777 14.6967 18.3364 15.1379L9.03058 24.3836C8.58936 24.7847 8.12807 25.0053 7.62668 25.0053C7.06512 25.0053 6.58378 24.8048 6.22278 24.3836C5.84172 23.9825 5.64117 23.5012 5.64117 22.9396C5.64117 22.378 5.84172 21.9168 6.22278 21.5357C12.3598 15.3585 16.1504 11.6282 17.5944 10.2443L24.7342 17.3039C25.5164 18.046 26.4189 18.4271 27.5219 18.4271C28.9258 18.4271 30.0289 17.8655 30.8512 16.7424C31.4128 15.9201 31.6133 15.0176 31.4529 14.0148C31.2924 13.012 30.8713 12.1697 30.1894 11.4677L22.0066 3.20477ZM26.1381 15.9L17.5944 7.33625L3.39493 21.5357C1.71025 19.831 0.747571 17.2237 0.526958 13.6739C0.306346 10.144 1.26902 7.07553 3.39493 4.50839C5.78156 2.14182 8.62947 0.938477 11.9387 0.938477C15.2679 0.938477 18.0958 2.14182 20.4022 4.50839L28.966 13.0722C29.347 13.4532 29.5275 13.9145 29.5275 14.4761C29.5275 15.0376 29.347 15.519 28.966 15.9C28.5849 16.261 28.1236 16.4616 27.5219 16.4616C26.9804 16.4616 26.5192 16.261 26.1381 15.9Z"
+                        fill="#302E2D" />
+                  </svg>
+                  <p>Fiable et à jour</p>
+               </div>
+            </div>
+            <p>Vous êtes une association ?</p>
+            <p>Un bénévole ? </p>
+            <p>Une entreprise ?</p>
+            <p>Une organisation professionnelle ?</p>
+            <div>
+               <button>telecharger</button>
+               <!-- <form>
+                  <input name="submitted-name" autocomplete="name" />
+                  <button>Sauvegarder</button>
+               </form> -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer>
+      <div class="container">
+         <div class="footer_wrapper">
+            <div class="foot">
+               <img id="logo" src="medias/solia_v.png" alt="">
+               <div id="telecharge">
+                  <p>Telecharger:</p>
+                  <div id="telimage">
+                     <img class="badge" src="medias/app_store.png">
+                     <img class="badge" src="medias/google_play.png">
+                  </div>
+               </div>
+               <a href="">Aperçu</a>
+               <a href="">fonctionnalités</a>
+               <a href="">Aide</a>
+               <a href="">Confidentialité</a>
+            </div>
+            <p id="cc">© 2077 Solia. Tous droits réservés.</p>
+         </div>
+      </div>
+   </footer>
+
 
 </body>
 
