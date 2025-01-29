@@ -1,4 +1,4 @@
-<!-- Page d'acceuil et de présentation de l'application que vous proposez (comme si vous deviez la vendre)-->
+<!-- Page d'acceuil et de présentation de l'application que vous prNNoposez (comme si vous deviez la vendre)-->
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -14,8 +14,9 @@
 </head>
 
 <body>
+   <script src="https://kit.fontawesome.com/f0a45dc71d.js" crossorigin="anonymous"></script>
    <header>
-      <section class="img_h1">
+      <section class="logo">
          <img src="medias/solia_v.png" alt="solia.logo">
          <h1>Solia</h1>
       </section>
@@ -29,51 +30,55 @@
          <a href=""><button>Télécharger</button></a>
       </section>
    </header>
-   <article id="hero">
-      <!-- héro section -->
-      <section class="herosec">
-         <div>
-            <h2>L'application qui vous accueille</h2>
-            <p>Le répertoire de lieux-ressources pour tous les parents nouveaux arrivants</p>
-            <a href=""><button>Télécharger</button></a>
-         </div>
-      </section>
-      <!-- Section Problématique -->
-      <section class="Problématique" ,>
-         <section id="Zr">
-            <div class="contexte">
-               <h2>SOLIA</h2>
-               <p>L’accès aux services et aides les plus essentiels est souvent limité par de nombreux facteurs ; c’est
-                  d’autant plus vrai pour les familles expatriées en France. Souvent, elles ne connaissent pas leurs
-                  droits, et la dispersion des sources d’informations dans une langue qui leur est étrangère rend leurs
-                  recherches laborieuses.
 
-                  C’est dans un effort de réduire ces difficultés liées aux barrières linguistiques et à l’errance
-                  urbaine que Solia est née..</p>
-            </div>
-            <div class="contexte">
-               <img src="medias/phones_transparent.png" alt="">
-            </div>
-         </section>
-      </section>
-   </article>
-   <!-- Section Solution -->
+   <!-- héro section -->
+   <section class="herosec">
+      <div>
+         <h2>L'application qui vous accueille</h2>
+         <p>Le répertoire de lieux-ressources pour tous les parents nouveaux arrivants</p>
+         <a href=""><button>Télécharger</button></a>
+      </div>
+   </section>
+
+   <!-- Section Problématique -->
+   <section id="Problematique">
+      <div class="container">
+         <div class="contexte">
+            <h2>SOLIA</h2>
+            <p>L’accès aux services et aides les plus essentiels est souvent limité par de nombreux facteurs ; c’est
+               d’autant plus vrai pour les familles expatriées en France. Souvent, elles ne connaissent pas leurs
+               droits, et la dispersion des sources d’informations dans une langue qui leur est étrangère rend leurs
+               recherches laborieuses.
+
+               C’est dans un effort de réduire ces difficultés liées aux barrières linguistiques et à l’errance
+               urbaine que Solia est née..</p>
+         </div>
+         <img src="medias/phones_transparent.png" alt="">
+      </div>
+      </div>
+   </section>
+
+   <!-- article Solution -->
    <article id="fonctionnalité">
       <section>
          <!-- icone des fonctionnalité en box -->
-         <h2>Nos fonctionnalité</h2>
+         <h2 id="fonction1">Nos fonctionnalités</h2>
          <section class="box-container">
             <div class="box">
-               <p>test box 1</p>
+               <i class="fa-solid fa-language"></i>
+               <p>Choisissez votre langue</p>
             </div>
             <div class="box">
-               <p>test box 2</p>
+               <i class="fa-regular fa-map"></i>
+               <p>Trouvez vos itinéraires</p>
             </div>
             <div class="box">
-               <p>test box 3</p>
+               <i class="fa-solid fa-circle-info"></i>
+               <p>Informez vous sur vos droits</p>
             </div>
             <div class="box">
-               <p>test box 4</p>
+               <i class="fa-solid fa-filter"></i>
+               <p>Filtrez selon vos besoins</p>
             </div>
          </section>
       </section>
@@ -81,26 +86,61 @@
 
    <!-- nous -->
    <section class="fond">
-      <section>
+      <div id="Nous">
          <h2>Nous</h2>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias odio doloremque quos soluta suscipit
-            totam placeat enim libero qui vel, nam excepturi voluptate recusandae incidunt voluptatibus rem ipsum ab
-            impedit.</p>
-      </section>
-      <section>
-      </section>
+         <p>
+            L’idée de Solia est née d’une collaboration entre 5 apprentis développeurs désireux de rassembler en un seul
+            outil tous les lieux et services proposés pour les familles en situation irrégulière, ainsi que celles ne
+            parlant pas le français.
+         </p>
+
+         <p>
+            Ayant un pied dans le monde de la puériculture, l’équipe s’applique avant tout à réunir tous les
+            lieux-ressources de Lyon 7e pour les jeunes parents, avec l’espoir de s’étendre sur le reste de la ville et
+            sur d’autres services de réinsertion.
+         </p>
+      </div>
+      <div id="avatars">
+         <img src="medias/avatars.png">
+      </div>
    </section>
 
    <!-- vous -->
    <section>
-      <section>
+      <section id="fond1">
+         <div id="fond2">
+            <h2>Vous</h2>
+            <p>Vous venez d’arriver en France, vous êtes allophone et jeune parent ?</p>
+            <p>Solia est là pour vous guider.</p>
+            <p>
+               Avec un répertoire dans votre langue contenant toutes les informations sur vos droits et une map
+               interactive vous orientant dans la ville, vous n’aurez plus aucun souci à trouver les aides dont vous
+               avez vraiment besoin.
+            </p>
+         </div>
+         <!-- <div id="side-img">
+            <img src="medias/vous section.jpg">
+         </div> -->
       </section>
-      <section>
-         <h2>Vous</h2>
-         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias odio doloremque quos soluta suscipit
-            totam placeat enim libero qui vel, nam excepturi voluptate recusandae incidunt voluptatibus rem ipsum ab
-            impedit.</p>
-      </section>
+   </section>
+
+   <!-- avis -->
+   <section class="avis_section">
+      <div class="avis">
+         <img class="avis_img" src="medias/avis_1.jpg">
+         <div class="avis_texte"></div>
+         <h4>Maria L</h4>
+         <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et j’ai découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles comme la mienne !"</p>
+         <img class="avis_note" src="medias/etoile.png" alt="">
+         </div>
+      </div>
+      <div class="avis">
+         <img class="avis_img" src="medias/avis_2.png">
+         <div class="avis_texte"></div>
+         <h4>Maria L</h4>
+         <p>“Grâce à Solia, j’ai rapidement pu bénéficier d’un service de garde adapté pour mes deux filles, et j’ai découvert des associations prêtes à m’accompagner. C’est une vraie bénédiction pour les familles comme la mienne !"</p>
+         <img class="avis_note" src="medias/etoile.png" alt="">
+      </div>
    </section>
 
 </body>
