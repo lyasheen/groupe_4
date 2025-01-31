@@ -25,9 +25,10 @@ body {
     margin: 0px;
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 20px;
     font-style: normal;
-    letter-spacing: 2px;
+    letter-spacing: 2.8px;
     margin-bottom: 20px;
 }
 
@@ -35,6 +36,8 @@ header {
     display: flex;
     background-color: var(--color-white);
     justify-content: space-between;
+    width: 100%;
+    position: fixed;
     img{
         max-width: 43px;
     }
@@ -48,6 +51,7 @@ section {
     align-items: center;
     padding: 64px 24px;
     background-size: cover;
+    box-sizing: border-box;
 }
 
 
@@ -56,6 +60,8 @@ section {
     align-items: center;
     gap: 20px;
     padding: 10px;
+    height: 50px;
+    width: 50px;
 }
 
 #section-nav {
@@ -63,6 +69,7 @@ section {
     display: flex;
     align-items: center;
     padding: 0px 50px;
+    
 }
 
 a {
@@ -83,29 +90,29 @@ button {
 
 }
 
-
-
 h2 {
     font-size: 55px;
+        padding: 30px 0px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     max-width: 1080px;
-    width: 100%;   
     margin: auto;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    max-width: 450px;
+    justify-content: space-evenly;
 }
 
 .is-centered {
     align-items: center;
     margin: auto;
+    line-height: 1.5;
 }
 
 #herosec {
@@ -123,7 +130,6 @@ h2 {
 
     p {
         padding-bottom: 20px;
-        
     }
 }
 
@@ -133,9 +139,10 @@ h2 {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-white);
-
+    max-height: 700px;
     img {
-        width: 90%;
+        width: 70%;
+        height: 70%;
         padding: 30px 30px;
     }
 }
@@ -145,7 +152,6 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 0px 150px;
-    font-size: 15px;
 
     p {
         margin-bottom: 30px;
@@ -158,11 +164,6 @@ h2 {
 }
 
 
-header section img {
-    height: 50px;
-    width: 50px;
-}
-
 button:hover {
     cursor: pointer;
 }
@@ -171,11 +172,12 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 1065px;
 }
 
 .box {
 
-    width: 166px;
+    width: 160px;
     /* height: 200px; */
     border: 0 white;
     padding: 5px;
@@ -184,14 +186,21 @@ button:hover {
     border-radius: 2%;
     background-color: var(--color-beige);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 40px;
+    p {
+        text-align: center;
+        line-height: 1.2;
+    }
 }
 
 #nous_section {
     img {
         width: 40%;
         padding: 30px 30px;
+        object-fit: contain;
     }
 }
 
@@ -202,38 +211,70 @@ button:hover {
         aspect-ratio: inherit;
         object-fit: cover;
     }
+    a {
+        text-decoration: underline;
+    }
     background-color: white;
 }
 
 /* avis */
 
+.avis_wrapper {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .avis {
+    display: flex;
+    align-items: center;
     padding: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 10px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     font-weight: bolder;
-    align-items: center;
-    justify-content: space-around;
+    
     font-family: "Michroma", sans-serif;
     background: var(--color-beige);
     border-radius: 8px;
     /* margin-top: 50px; */
-    width: 43%;
-    height: fit-content;
+    width: 440px;
+    height: 300px;
+    p {
+        font-weight: 200;
+        font-size: 15px;
+        line-height: normal;
+    }
 }
-
 
 .avis_img {
     display: flex;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 
+}
+
+.avis_texte {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    padding: 30px;
+}
+
+.avis_note {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: 30px;
+    width: 160px;
 }
 
 #partenaires {
     background-color: white;
     img {
-        width: 200px;
+        width: 100px;
     }
 
     .container {
@@ -241,15 +282,86 @@ button:hover {
         gap: 24px;
     }
 }
+
 .contact_valeurs{
     display: flex;
     gap: 40px;
+    width: 800px;
+    justify-content: center;
     div{
         display: flex;
         gap: 10px;
         align-items: center;
+        p {
+            font-size: 13px;
+            font-weight: 600;
+        }
     }
 }
+
+#fonctionnalités {
+    margin-top: 100px;
+    background-color: var(--color-white);
+    padding: 20px;
+    background-color: white;
+    height: 500px;
+    i {
+        height: 35px;
+    }
+    p {
+        font-weight: 600;
+    }
+}
+
+#fond1 {
+    background-color: white;
+    padding: 20px;
+}
+
+#side_img {
+    max-width: 900px;
+
+    img {
+        width: 50%;
+        padding: 30px 30px;
+        margin-left: 120px;
+    }
+}
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px;
+    background-color: white;
+    #cc {
+        margin-left: 70px;
+    }
+
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    #logo {
+        max-width: 10%;
+    }
+}
+.footer_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* DOCUMENTATION */
+
+
 .doc_background-white {
 
     background-color: var(--color-beige);
@@ -268,6 +380,7 @@ button:hover {
 
 .OptionLangue {
     height: 400px;
+    object-fit: contain;
 }
 
 #persona {
@@ -284,31 +397,7 @@ button:hover {
     height: 100px;
 }
 
-#fonctionnalité {
-    margin-top: 100px;
-    background-color: var(--color-white);
-    padding: 20px;
-    background-color: white;
-}
 
-#Nous {
-    max-width: 600px;
-}
-
-#fond1 {
-    background-color: white;
-    padding: 20px;
-}
-
-#side_img {
-    max-width: 900px;
-
-    img {
-        width: 50%;
-        padding: 30px 30px;
-        margin-left: 120px;
-    }
-}
 
 
 .doc_contexte {
@@ -394,36 +483,6 @@ button:hover {
     font-size: 50px;
 }
 
-.avis_wrapper {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
-
-footer {
-    display: flex;
-    align-items: center;
-    padding: 30px 30px;
-    background-color: white;
-    #cc {
-        margin-left: 70px;
-    }
-
-}
-
-.foot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    #logo {
-        max-width: 10%;
-    }
-}
 
 #telecharge {
     max-width: 150px;
@@ -441,14 +500,3 @@ footer {
     }
 
 }
-
-.footer_wrapper {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* #logo{
-    padding: 0;
-} */
