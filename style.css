@@ -12,6 +12,13 @@
     padding: 0;
     /* box-sizing: border-box; */
 }
+.mobile-visible{
+     display: none;   
+}
+.mobile-hidden{
+    display: block;
+}
+
 li {
     list-style: none;
 }
@@ -38,8 +45,9 @@ header {
     justify-content: space-between;
     width: 100%;
     position: fixed;
+    box-shadow: 0 4px 15px #00000012;
     img{
-        max-width: 43px;
+        max-width: 150px;
     }
 }
 
@@ -84,10 +92,11 @@ a:hover {
 button {
     padding: 12px 24px;
     border: 0px;
-    color: var(--color-white);
+    color: var(--color-black);
     border-radius: var(--radius);
     background-color: var(--color-green);
-
+    font-weight: 600;
+    font-family: "Kufam", serif;
 }
 
 h2 {
@@ -100,6 +109,7 @@ h2 {
     flex-direction: row;
     max-width: 1080px;
     margin: auto;
+    width: 100%;
 }
 
 .content {
@@ -123,7 +133,6 @@ h2 {
     color: var(--color-white);
     background-image: url(medias/lyon.jpg);
     background-repeat: no-repeat;
-    width: 100%;
     .content {
         max-width: 500px;
     }
@@ -139,10 +148,18 @@ h2 {
     align-items: center;
     justify-content: space-between;
     background-color: var(--color-white);
-    max-height: 700px;
+    h2 {
+        font-size: 40px;
+    }
+    #problem-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        gap: 32px;
+    }
     img {
-        width: 70%;
-        height: 70%;
+        width: 30%;
         padding: 30px 30px;
     }
 }
@@ -172,7 +189,6 @@ button:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1065px;
 }
 
 .box {
@@ -182,8 +198,8 @@ button:hover {
     border: 0 white;
     padding: 5px;
     margin: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 2%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px #0000001c;
     background-color: var(--color-beige);
     display: flex;
     flex-direction: column;
@@ -237,7 +253,6 @@ button:hover {
     font-family: "Michroma", sans-serif;
     background: var(--color-beige);
     border-radius: 8px;
-    /* margin-top: 50px; */
     width: 440px;
     height: 300px;
     p {
@@ -282,7 +297,14 @@ button:hover {
         gap: 24px;
     }
 }
-
+#cta-section{
+    h2{
+        text-wrap: nowrap;
+    }
+    button{
+        margin-top: 40px;
+    }
+}
 .contact_valeurs{
     display: flex;
     gap: 40px;
@@ -290,8 +312,10 @@ button:hover {
     justify-content: center;
     div{
         display: flex;
-        gap: 10px;
+        gap: 4px;
+        flex-direction: column;
         align-items: center;
+        margin-bottom: 40px;
         p {
             font-size: 13px;
             font-weight: 600;
@@ -301,15 +325,19 @@ button:hover {
 
 #fonctionnalités {
     margin-top: 100px;
-    background-color: var(--color-white);
-    padding: 20px;
+    background-color: var(--color-white);    
+    padding: 64px 24px 86px 24px;
     background-color: white;
-    height: 500px;
     i {
         height: 35px;
     }
     p {
         font-weight: 600;
+    }
+    .content{        
+        width: 100%;
+        max-width: none;
+        flex-wrap: wrap;
     }
 }
 
@@ -332,15 +360,31 @@ button:hover {
 
 
 footer {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     padding: 30px 30px;
     background-color: white;
     #cc {
         margin-left: 70px;
     }
-
+    div {padding: 10px;}
+    .fodiv2 a {
+        padding: 10px;
+    }
+    .telimage img {
+        margin: 10px;
+    }
 }
+
+.fodiv {
+display: flex;
+justify-content: space-between;
+}
+
+.fodiv2 {
+    display: flex;
+    justify-content: space-between;
+    }
 
 .foot {
     display: flex;
@@ -363,15 +407,22 @@ footer {
 
 
 .doc_background-white {
-
+    p {
+        text-align: center;
+        max-width: 400px;
+    }
     background-color: var(--color-beige);
     padding: 10px;
+    
 }
 
 .doc_background-beige {
+    p {
+        max-width: 800px;
+        padding-bottom: 30px;
+    }
     background-color: var(--color-white);
-    display: flex;
-    /* padding-left: 136px; */
+    
 }
 
 .doc_pading {
@@ -398,8 +449,6 @@ footer {
 }
 
 
-
-
 .doc_contexte {
     color: white;
     background-image: url(medias/lyon.jpg);
@@ -417,7 +466,6 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2%;
     background-color: var(--color-beige);
-    /* width: 30%; */
     width: auto;
 
     p{
@@ -426,18 +474,15 @@ footer {
 }
 
 .doc_box5{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
     padding: 40px;
-    border: 0 white;
-    padding: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 2%;
+    border-radius: 8px;
     background-color: var(--color-beige);
     width: 30%;
     p {
+       text-align: center; 
         height: 50px;
+        padding-bottom: 30px;
     }
 }
 
@@ -446,9 +491,7 @@ footer {
     align-items: center;
     padding-bottom: 50px;
     justify-content: space-evenly;
-    gap: 10px;
-    
-
+    gap: 40px;
 }
 
 .doc_logo {
@@ -468,12 +511,6 @@ footer {
 .doc_box3 {
     display: flex;
     justify-content: center;
-}
-
-.doc_box4 {
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
 }
 
 .DocIconeFooter {
@@ -500,3 +537,59 @@ footer {
     }
 
 }
+
+
+
+#Formul {
+    display: table-caption;
+    justify-items: center;
+}
+
+
+
+/* media query mobile responsive */
+
+@media only screen and (max-width : 480px) {
+    /* Styles pour cette Media Queries */
+
+    .mobile-visible{
+        display: block;
+    }
+    .mobile-hidden{
+        display: none !important;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .avis_wrapper {
+        padding: 0;
+    }
+    body{
+        border: red solid 1px;
+    }
+    .avis{
+        
+    width: 100%;
+    height: auto;
+    }
+    #cta-section{
+        h2{
+            font-size: 44px;
+        }
+    }
+    .DocIconeFooter {
+        flex-direction: column;
+    }
+    .fodiv2{
+        flex-direction: column;
+
+    }
+    .contact_valeurs {
+        flex-direction: column;
+        gap: 12px;
+        width: unset;
+        margin-bottom: 24px;
+    }
+    }
