@@ -26,15 +26,24 @@
       <div class="logo">
          <a href="index.html"><img src="medias/solia_logo.png" alt="solia.logo"></a>
       </div>
-      <div id="section-nav">
+      <div class="mobile-visible">
+         <details>
+            <summary>Menu</summary>
+            <ul>
+               <li><a href="index.html" class="section-auto">Accueil</a></li>
+               <li><a href="documentation.html" class="section-auto">Documentation</a></li>
+               <li><a href="https://www.figma.com/proto/jZM5zR5QgsoRqaWXAvzV0D/SOLIA---Wireframe?page-id=38%3A7&node-id=264-4415&viewport=-2023%2C-617%2C0.52&t=6BfcCotJPlIi1OOP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=264%3A4415"
+                     target="_blank"><button>Télécharger</button></a></li>
+               <li><a href="" id="nav_language"><img src="/medias/nav_language.png" alt=""></a></li>
+            </ul>
+         </details>
+      </div>
+      <div id="section-nav" class="mobile-hidden">
          <a href="index.html" class="section-auto">Accueil</a>
-         <a href="#Problematique" class="section-auto">Pourquoi</a>
-         <a href="#nous_section" class="section-auto">Qui</a>
-         <a href="#avis_section" class="section-auto">Avis</a>
          <a href="documentation.html" class="section-auto">Documentation</a>
-         <a href="" class="section-auto">Langues</a>
          <a href="https://www.figma.com/proto/jZM5zR5QgsoRqaWXAvzV0D/SOLIA---Wireframe?page-id=38%3A7&node-id=264-4415&viewport=-2023%2C-617%2C0.52&t=6BfcCotJPlIi1OOP-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=264%3A4415"
             target="_blank"><button>Télécharger</button></a>
+         <a href=""><img src="/medias/nav_language.png" alt=""></a>
       </div>
    </header>
 
@@ -42,17 +51,31 @@
    <section class="doc_contexte">
       <div class="container">
          <div>
-            <h2>Le contexte</h2>
-            <p class="doc_pading">En effectuant nos recherches, nous avons constaté que de nombreuses familles
-               expatriées en France ne pouvaient
-               pas bénéficier de différentes aides (PMI, associations) ainsi que de leurs droits en raison de la
-               barrière
-               linguistique. De plus, ils subissent une errance urbaine rendant très difficile leurs déplacements en
-               ville.
+            <h1>A l'origine de Solia</h1>
+            <p class="doc_pading"> Voici l'ensemble de nos inspirations, références et de notre processus pour la
+               création de notre application. Vous y trouverez le contexte dans lequel nous avons débuté nos recherches,
+               notre cible, nos parcours et tests utilisateurs, ainsi que l'avenir de notre application.
             </p>
 
          </div>
       </div>
+   </section>
+
+   <!-- contexte -->
+   <section class="doc_background-white">
+      <h3 class="doc_sansmarge">Le contexte</h3>
+   </section>
+   <section class="doc_background-beige">
+
+      <p>En effectuant nos recherches, nous avons constaté que de nombreuses familles
+         expatriées en France ne pouvaient
+         pas bénéficier de différentes aides (PMI, associations) ainsi que de leurs droits en raison de la
+         barrière
+         linguistique. De plus, ils subissent une errance urbaine rendant très difficile leurs déplacements en
+         ville.
+      </p>
+      <img id="doc_imgcontext" src="medias/doc_image.jpg" alt="test image">
+
    </section>
 
    <!-- cible -->
@@ -66,16 +89,29 @@
          Notre application accompagne les familles expatriées nouvellement arrivées en France, même si elles ne
          maîtrisent pas encore le français à avoir accès au lieu et a leur droit.
       </p>
-
-
       <img id="persona" src="medias/doc_user.png" alt="test image">
 
    </section>
 
-   <section>
+   <section class="doc_background-white">
       <h3 class="doc_sansmarge">Parcours utilisateur</h3>
-
-      <a href="medias/doc_userflow.png" target="_blank" title="Image en plus haute définition"><img class="OptionLangue" src="medias/doc_userflow.png"></a>
+   </section>
+   <section class="doc_background-beige">
+      <p>
+      <ul>Voici le parcours général de nos utilisateurs :
+         <li><b>1. Difficulté de communication pour atteindre une adresse</b></li>
+         <li>→ Première prise en main de Solia</li>
+         <li><b>2. Choix du langage de l'utilisateur.</b></li>
+         <li>→ Besoins d'informations concrètes sur ses droits</li>
+         <li><b>3. Liste des droits de l'utilisateur et adresses.</b></li>
+         <li>→ Besoin d'un itinéraire précis</li>
+         <li><b>4. Itinéraire avec points visuels sur la carte interactive.</b></li>
+         <li>Localisation en temps et en heure facilitant
+            les déplacements.</li>
+      </ul>
+      </p>
+      <a href="medias/doc_userflow.png" target="_blank" title="Image en plus haute définition"><img class="OptionLangue"
+            src="medias/doc_userflow.png"></a>
 
    </section>
 
@@ -84,7 +120,7 @@
       <h3 class="doc_sansmarge">Fonctionnalités</h3>
    </section>
    <section>
-      <div class="container">
+      <div class="container2">
          <div class="doc_box-container2">
             <div class="doc_box5">
                <p>Choisissez votre langue</p>
@@ -93,7 +129,7 @@
 
             <div class="doc_box5">
                <p>Informez vous sur vos droits</p>
-               <img class="OptionLangue" src="medias/doc_infos_garderie.png">
+               <img class="OptionLangue" src="medias/doc_compo.png">
             </div>
 
             <div class="doc_box5">
@@ -111,19 +147,124 @@
 
    </section>
 
-   <section class="doc_box-container2">
+   <section class="doc_background-white">
+      <h3 class="doc_sansmarge">Tests utilisateurs</h3>
+   </section>
+   <section class="doc_background-beige">
+      <div>
+         <div class="container">
+            <div class="doc_profil">
+               <img src="medias/avis_1.jpg" alt="image test">
+               <p><b>Nom : </b>Solène Moya
+               <p><b>Profession:</b> membre de l’asso la Croix Rouge, en alternance à l’emlyon</p>
+               <p><b>Date de l'échange :</b> 23/01/2025</p>
 
-      <div class="doc_box2">
-         <h3 class="doc_box3">Application Mobile</h3>
-         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-            src="https://embed.figma.com/proto/jZM5zR5QgsoRqaWXAvzV0D/Wireframe-app-%C3%A9duc?node-id=264-4488&p=f&scaling=scale-down&content-scaling=fixed&page-id=38%3A7&starting-point-node-id=264%3A4488&show-proto-sidebar=1&embed-host=share"
-            allowfullscreen></iframe>
+            </div>
+            <div class="doc_profil">
+               <li><h3>Questions générales</h3></li>
+               <ul>
+                  <li><b> • Est-ce que vous connaissez ou utilisez un service / une application / un produit en lien avec
+                        ce
+                        sujet ?</b></li>
+                  <li>
+                     Non je n’ai jamais vu d’application du style. Il y a des banques de données mais elles sont en
+                     français et donc moins accessibles pour tous. De plus, certaines assos comme la mienne sont
+                     associées
+                     à des opérateurs qui donnent des smartphones gratuitement. C’est l’outil essentiel, aujourd’hui.
+                  </li>
+
+                  <li><b>• Est ce qu’il y a déjà eu des familles qui sont venues vous demander s'il existait ce genre
+                        d’application ? </b></li>
+                  <li> Oui, des familles sont dans la demande de ce type d’application dans leur langue.
+                  </li>
+                  </b>
+                  <li><b>• Quelles sont les problématiques que vous avez rencontré avec des familles expatriées qui ne
+                        parlent
+                        pas la langue ? </b></li>
+                  <li>On finit toujours par utiliser google traduction. Une fois, je me suis retrouvée
+                     avec une maman albanaise enceinte : je ne connais pas les services disponibles en France et je ne
+                     parle pas la langue, c’est doublement dur. Avoir une application comme ça nous ferait gagner
+                     beaucoup
+                     de temps.</li>
+
+                  <li><b>• Quelles sont les principales difficultés rencontrées par les familles expatriées dans l'accès
+                        aux
+                        soins pour leurs enfants ?</b></li>
+                  <li>Ils ne connaissent pas ce qui est disponible, et ont du mal à s’y
+                     rendre. Tout est en français, ils
+                     ne connaissent pas la ville….</li>
+               </ul>
+
+               <li><b><h3>Retours sur l'UX</h3></b></li>
+               <ul>
+                  <li></li>
+                  <li>Au niveau des informations, mettre en avant à quoi correspond chaque aide. Par exemple, je ne
+                     savais
+                     pas ce qu’était une PMI et c’est toi qui me l’as appris, mais c’est la première chose qu’on voit
+                     quand
+                     on va sur l’application. Ce serait bien d’avoir des définitions sur les termes “de base” dès le
+                     départ.</li>
+                  <li> Peut-être rajouter plus d’informations, plus d’ergonomie sur la page des trajets : le temps que
+                     ça prend, notre position actuelle pour avoir tous les lieux-ressource à portée de main, etc…</li>
+                  <li>c’était très facile à prendre en main.</li>
+
+               </ul>
+
+               <li><b><h3>Suggestion(s)</h3></b></li>
+               <ul>
+                  <li>Ca pourrait être intéressant d’avoir également des audios pour ceux qui ne savent pas lire, mais
+                     il s’agit d’une version plus aboutie, j’imagine !</li>
+                  <li>Les filtres sont très pertinents</li>
+                  <li>Améliorer les couleurs parfois, ton sur ton. Se pencher sur le design ? Et peut-être accessibilité aux
+                     personnes analphabètes avec une version avec vocaux</li>
+
+               </ul>
+            </div>
+         </div>
       </div>
 
    </section>
 
+
+   <section class="doc_box-container2">
+
+      <div class="doc_box2">
+         <h3 class="doc_box3">Application Mobile</h3>
+         <div style="width: 100%; max-width: 517px; aspect-ratio: 517 / 987; position: relative;">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; height: 100%;"
+               src="https://embed.figma.com/proto/jZM5zR5QgsoRqaWXAvzV0D/SOLIA---Wireframe?page-id=38%3A7&node-id=264-4415&p=f&viewport=-175%2C-21%2C0.15&scaling=scale-down&content-scaling=fixed&starting-point-node-id=264%3A4415&embed-host=share"
+               allowfullscreen>
+            </iframe>
+
+         </div>
+      </div>
+
+   </section>
+
+   <section class=" doc_background-white">
+      <h3 class="doc_sansmarge">Et après ?</h3>
+   </section>
+   <section class="doc_background-beige">
+      <p> Solia est un projet qui prend ses racines dans le 7e arrondissement de Lyon, afin de tester sa pertinence et
+         l'impact de son rayonnement. Mais nous ne comptons pas nous arrêter là : Solia a de l'avenir en
+         étendant son impact aux arrondissements voisins. <br>Nous avons dégagé quelques pistes principales :
+      <ul>
+         <li><b>1. Etendre nos services au de-là de la petite enfance</b></li>
+         <li>→ Aider à une bonne réinsertion en agissant sur l'emploi, par exemple, ou l'apprentissage de la langue</li>
+         <li><b>2. Proposer une accessibilité par enregistrement vocaux</b></li>
+         <li>→ Pour les personnes illettrées ou malvoyantes</li>
+         <li><b>3.  Lister les lieux proposant plusieurs services </b></li>
+         <li>→ Car plusieurs lieux regroupent de nombreux avantages</li>
+         <li><b>4. Se pencher sur l'accessibilité du visuel</b></li>
+         <li>En voulant simplifier l'application, nous avons eu recours à des codes de logos 
+            accessibles pour nous. Le sont-ils pour tous ?
+         </li>
+      </ul>
+      </p>
+   </section>
+
    <section class="doc_box3">
-      <p>Technologie utilisés</p>
+      <p>Technologies utilisées</p>
    </section>
 
    <article>
@@ -145,6 +286,7 @@
             <a href="https://www.google.com/maps"><img class="DocFooterIMG" src="medias/google_maps_logo.png"></a>
             <a href="https://leseldanslecafe.fr/"><img class="DocFooterIMG" src="medias/doc_sel_cafe.png"></a>
             <a href="https://www.tcl.fr/"><img class="DocFooterIMG" src="medias/doc_tcl.png"></a>
+            <a href="https://yoonfrance.com/"><img class="DocFooterIMGyoon" src="medias/logo-yoon.png" alt=""></a>
          </div>
       </section>
    </article>
