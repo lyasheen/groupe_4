@@ -141,8 +141,9 @@ h2 {
 #herosec {
     display: flex;
     align-items: center;
-    min-height: 60vh;
+    min-height: 100vh;
     width: 100%;
+    padding: 134px 24px 64px 24px;
     color: var(--color-white);
     background: linear-gradient(275deg, #ff00001f, #615e5da8), url(medias/lyon.jpg);
     background-repeat: no-repeat;
@@ -178,7 +179,6 @@ h2 {
 .contexte {
     display: flex;
     flex-direction: column;
-    padding: 0px 150px;
 
     p {
         margin-bottom: 30px;
@@ -318,6 +318,11 @@ button:hover {
         margin-top: 40px;
     }
 }
+
+#joinus {
+    padding-bottom: 30px;
+}
+
 .contact_valeurs{
     display: flex;
     gap: 40px;
@@ -471,6 +476,8 @@ justify-content: space-between;
     color: white;
     background: linear-gradient(275deg, #ff00001f, #615e5da8), url(medias/lyon.jpg);
     background-repeat: no-repeat;
+    padding: 134px 24px 64px 24px;
+    min-height: 100vh;
 }
 
 #doc_imgcontext {
@@ -570,13 +577,22 @@ justify-content: space-between;
 #Formul{
     display: table-caption;
     width: 307px;
-    /* height: 300px; */
-    border: 0 white;
+    border: 0 rgba(255, 255, 255, 0);
     padding: 5px;
     margin: 10px;
+    margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2%;
     background-color: var(--color-beige);
+    p {
+        text-align: center;
+        font-weight: 700;
+        padding: 10px;
+    }
+}
+
+#Formulaire li{
+    margin-bottom: 10px;
 }
 
 .Formule{
@@ -584,7 +600,48 @@ justify-content: space-between;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+input {
+    border: 8px solid rgba(255, 255, 255, 0);
+    padding-left: 4px;
+    font-family: "Work Sans", serif;
+}
+
+textarea {
+    border: 8px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    font-family: "Work Sans", serif;
+}
+
+input::placeholder {
+    color: var(--color-black);
+    font-style: italic;
+    opacity: 0.5;
+    font-family:"Work Sans", serif;
+}
+
+textarea::placeholder {
+    color: var(--color-black);
+    font-style: italic;
+    font-family:"Work Sans", serif;
+    opacity: 0.5;
+}
+
+#QRcenter {
+    display: flex;   
+    justify-content: center;
+    padding: 50px 0px;
+    button {
+        width: 300px;
+        border-radius: 0%;
+
+    }
+    p {
+        font-style: italic;
+        padding-bottom: 10px;
+    }
 }
 
 #name{
@@ -618,11 +675,16 @@ justify-content: space-between;
     }
 }
 #fbutton{
-     margin-top: 10px;
+     margin: 10px;
      display: flex;
      justify-content: center;
-     max-width: 167px;
-}
+    }
+
+textarea {
+    resize: none;
+  }
+  
+
 .doc_profil {
     padding: 30px;
     ul {
